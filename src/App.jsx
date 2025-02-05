@@ -1,4 +1,5 @@
 import React from 'react'
+import "@fontsource-variable/mona-sans"; // Import the font
 import { useState } from 'react'
 
 import reactLogo from './assets/react.svg'
@@ -11,7 +12,7 @@ import Home from './pages/Home'
 function App() {
   
   return (
-    <div className='bg-black min-h-screen text-white'>
+    <div className=' min-h-screen text-white font-MonaSans-400 relative z-0'>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>

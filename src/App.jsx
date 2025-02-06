@@ -12,7 +12,7 @@ import Home from './pages/Home'
 function App() {
   
   return (
-    <div className=' min-h-screen text-white font-MonaSans-400 relative z-0'>
+    <div className=' min-h-screen text-white font-MonaSans-400 relative z-0 bg-[hsl(200,33%,98%)]'>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>

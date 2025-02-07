@@ -67,6 +67,9 @@ const instructorList=[{
   name:"Mrs. XYZ",image:t4
 }
 ]
+
+const reviews=["Mohd Danish","Sameer Khan"]
+
 const Home = () => {
   return (
     <div className="min-h-screen mx-4">
@@ -91,7 +94,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="h-screen flex items-center justify-center  w-1/2  relative -z-20 rounded-lg">
+        <div className="h-screen flex items-center justify-center  w-1/2  relative rounded-lg">
           <img src={redWave} alt="" className="w-32 absolute bottom-10 left-40" />
           <img src={bookImg} alt="" className="w-32 absolute top-15 left-25" />
           <img src={msgbox} alt="" className="w-32 absolute top-20 right-10" />
@@ -154,8 +157,8 @@ const Home = () => {
           <div className="grid grid-cols-4 gap-4">
             {
               instructorList.map((instructor,index)=>(
-                <div className=" shadow-2xl shadow-black  rounded-md group hover:-translate-2">
-                  <img src={instructor.image} alt="" className=" aspect-square object-cover p-4 duration-500  group-hover:scale-110 overflow-hidden " />
+                <div className=" shadow-2xl shadow-black  rounded-md group">
+                  <img src={instructor.image} alt="" className=" aspect-square object-cover p-4 duration-500  group-hover:scale-105 hover:grayscale-50 overflow-hidden " />
                   <p className=" text-center font-extrabold pb-2">{instructor.name}</p>
                 </div>
               ))
@@ -167,9 +170,28 @@ const Home = () => {
         <div className="text-black w-[60%]">
           <h1 className="text-4xl font-extrabold [text-shadow:5px_5px_5px_rgba(59,130,246,0.7)] line-clamp-3">We Have Highly Expert &<br/> Experienced Tutors</h1>
           <p className=" italic font-bold mt-2">Our platform offers highly expert and experienced tutors who provide personalized learning, ensuring students receive top-quality education tailored to their needs, learning style, and academic goals for optimal success.</p>
+          <button to="login" className="bg-[#525FE1] text-white py-2 px-4 mt-4 ml-2 rounded-md shadow-2xl cursor-pointer shadow-black shadow-lg shadow-black hover:scale-110">Start Now</button>
         </div>
           <img src={t3} alt="" className="w-[30%] aspect-square object-cover rounded-lg shadow-2xl shadow-blue-600 hover:grayscale-100 hover:scale-110"/>
       </section>
+
+      {/* Reviews */}
+      <section className="text-black">
+        <h1 className="text-5xl text-center font-bold m-4 [text-shadow:5px_5px_5px_rgba(59,130,246,0.7)] mb-8">What Our Students Says</h1>
+        <div className="flex overflow-hidden w-full gap-8 m-2">
+          {
+            reviews.map((review,index)=>(
+              <div className="text-black w-[50%] flex flex-col items-center justify-center shadow-2xl shadow-blue-600 gap-4 border-2 rounded-lg py-2 transition-all hover:rotate-12 hover:scale-90">
+              <img src={t1} className="w-32 aspect-square rounded-full object-cover"/>
+              <p className="text-black font-extrabold">{review}</p>
+              <p className=" text-center gap-8 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam perspiciatis incidunt ipsum non error veniam architecto placeat molestiae facere!</p>
+              </div>
+
+            ))
+          }
+        </div>
+      </section>
+
     </div>
   );
 };

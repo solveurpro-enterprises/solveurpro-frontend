@@ -6,9 +6,10 @@ import Button from './Button'
 const Navbar = () => {
     
   return (
-    <div className='h-14  px-4 py-1 flex justify-between items-center border-b-2 border-b-black fixed z-40 left-0 right-0 text-black bg-white' >
+    <div className='bg-white h-12 fixed w-full px-1 z-40'>
+    <div className='  max-w-7xl h-12 mx-auto flex justify-between items-center ' >
         <div className='h-full'><img className='h-full' src={logo} alt="" /></div>
-        <ul className='flex gap-4'>
+        <ul className='flex gap-4 text-black max-md:hidden'>
             {
                 navLinks.map((navLink,index)=>(
                     <Link to={navLink.path} key={index} className='font-bold'>{navLink.title}</Link>
@@ -19,6 +20,7 @@ const Navbar = () => {
             <Button bg={"white"} text={"black"} title={"Login"}/>
             <Button bg={"richblack-400"} text={"black"} title={"Join Us"}/>
         </div>
+    </div>
     </div>
 
   )

@@ -16,8 +16,8 @@ const socialIcons = [
 ];
 const Footer = () => {
   return (
-    <div className="w-full bg-black">
-  <div className="grid grid-cols-5 bg-black py-16 px-4 max-w-7xl mx-auto">
+    <div className="w-full bg-black ">
+  <div className="grid grid-cols-5 bg-black py-16 px-4 max-w-7xl mx-auto gap-4">
     <div className=" col-span-2 ">
       <img src={logo} alt="" className="w-60 rounded-lg " />
       <div className="flex gap-2 my-4">
@@ -55,8 +55,10 @@ const Footer = () => {
         <a href="">solveurprobiz@gmail.com</a>
       </div>
     </div>
-    <div></div>
   </div>  
+  <p className=" text-center py-2">
+        <a href="https://portfoliobysameer.vercel.app/" target="_blank">Made By ❤️ Sameer Khan &copy; 2025 solverurpro. All rights reserved</a>
+      </p>
   </div>
   );
 };

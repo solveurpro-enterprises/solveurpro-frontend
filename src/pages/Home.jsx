@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className=" mx-auto max-w-7xl">
       {/* hero section */}
-      <section className="flex items-center w-full transition-all duration-300 max-xl:min-h-screen pt-8 relative bg-transparent lg:h-fit px-4 max-md:flex-col max-md:px-0  max-md:mx-2 lg:py-16">
+      <section className="flex items-center w-full max-xl:min-h-screen pt-8 relative bg-transparent lg:h-fit px-4 max-md:flex-col max-md:px-0  max-md:mx-2 lg:py-16">
         <div className=" mt-8 relative z-10 ">
           <p className="text-[var(--primary-color)] flex gap-4 items-center font-extrabold mb-2 text-sm">
             {" "}

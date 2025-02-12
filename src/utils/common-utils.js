@@ -3,8 +3,8 @@ export const navLinks=[
         title:"Home",
         path:"/"
     },{
-        title:"Mentors",
-        path:"/mentors"
+        title:"Services",
+        path:"/services"
     },
     {
         title:"About Us",

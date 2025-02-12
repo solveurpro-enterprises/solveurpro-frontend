@@ -1,12 +1,12 @@
 :root{
-    --background-color:black,
     --primary-color:#FFFFFF,
-    --secondary-color:#87E51
+    --secondary-color:#616161,
+    --ternary-color:#1F2937
 
 }
 
 body{
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     /* font-family: font-MonaSans-400; */
     /* font-family: font-MonaSans-400; */
     font-family: "Mona Sans", sans-serif;

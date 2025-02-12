@@ -13,7 +13,7 @@ import Footer from './components/common/Footer';
 function App() {
   
   return (
-    <div className=' min-h-screen text-white font-MonaSans-400 relative bg-[hsl(200,33%,98%)] overflow-hidden'>
+    <div className=' min-h-screen text-white font-MonaSans-400 relative overflow-hidden'>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>

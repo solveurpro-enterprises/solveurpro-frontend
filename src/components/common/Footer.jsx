@@ -9,48 +9,55 @@ import { Link } from "react-router-dom";
 import phone from "../../assets/phone.jpeg";
 
 const socialIcons = [
-  { icons: instagram, link: "www.instagram.com/solverurpro" },
+  { icons: instagram, link: "https://www.instagram.com/solverurpro" },
   { icons: facebook, link: "https://facebook.com/solverurpro" },
-  { icons: linkedin, link: "www.linkedin.com/solverurpro" },
-  { icons: whatsapp, link: "www.whatsapp.com/solverurpro" },
+  { icons: linkedin, link: "http://www.linkedin.com/solverurpro" },
+  { icons: whatsapp, link: "http://www.whatsapp.com/solverurpro" },
 ];
 const Footer = () => {
   return (
-    <div className="bg-black text-white max-w-7xl mx-auto">
-      <div className="ml-4 bg-blue-600  py-4 rounded-lg flex justify-between px-8 overflow-hidden group ">
-        <div className="">
-          <div>
-            <img src={logo} alt="" className="w-42 rounded-lg max-md:w-24" />
-            <div className="my-8">
-              <p className="flex gap-2 items-center">
-                <HiOutlineMail /> solverurpro@gmail.com
-              </p>
-              <p className="flex gap-2 items-center">
-                <HiOutlinePhone /> 9999999999
-              </p>
-            </div>
-            <div>
-              <p className="text-3xl mb-8 [text-shadow:20px_8px_5px_rgba(0,0,0,1)] max-md:text-2xl max-sm:text-sm ">Follow Us On:</p>
-              <div className="flex gap-4 ">
-                {socialIcons.map((icon, index) => (
-                  <div className="hover:scale-125">
-                    <a href={icon.link} target="_blank">
-                      <img src={icon.icons} alt="" className="w-16 max-md:w-7" />
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          {/* <div> */}
-          {/* </div> */}
-        </div>
-          <img src={phone} alt="" className=" rounded-lg w-72 scale-150 mr-12 object-cover rotate-45 transition-all duration-400 group-hover:-rotate-12 group-hover:scale-90 max-md:hidden" />
+    <div className="w-full bg-black">
+  <div className="grid grid-cols-5 bg-black py-16 px-4 max-w-7xl mx-auto">
+    <div className=" col-span-2 ">
+      <img src={logo} alt="" className="w-60 rounded-lg " />
+      <div className="flex gap-2 my-4">
+        {
+          socialIcons.map((child,index)=>(
+            <a href={`${child.link}`}><img src={child.icons} alt="social icons" className="" /></a>
+          ))
+        }
       </div>
-      <p className=" text-center py-2 text-sm">
-        Made By ❤️ Sameer Khan &copy; 2025 solverurpro. All rights reserved
-      </p>
     </div>
+    <div className="font-bold">
+      <h1 className="text-gray-600 text-lg">SERVICES</h1>
+      <div className="flex flex-col gap-4">
+        <a href="">Providing Best Tutors</a>
+        <a href="">Best Curriculum</a>
+        <a href="">Modes Of Learning</a>
+        <a href="">Physically Challenged Students</a>
+        <a href="">Best Prices</a>
+      </div>
+    </div>
+    <div className="font-bold">
+      <h1 className="text-gray-600 text-lg">COMPANY</h1>
+      <div className="flex flex-col gap-4">
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+        <a href="">Gallary</a>
+        <a href="">News</a>
+        <a href="">Jobs</a>
+      </div>
+    </div>
+    <div className="font-bold">
+      <h1 className="text-gray-600 text-lg">CONTACT US</h1>
+      <div className="flex flex-col gap-4">
+        <a href="">7895680679</a>
+        <a href="">solveurprobiz@gmail.com</a>
+      </div>
+    </div>
+    <div></div>
+  </div>  
+  </div>
   );
 };
 

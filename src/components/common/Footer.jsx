@@ -16,8 +16,8 @@ const socialIcons = [
 ];
 const Footer = () => {
   return (
-    <div className="w-full bg-black ">
-  <div className="grid grid-cols-5 bg-black py-16 px-4 max-w-7xl mx-auto gap-4">
+    <div className="w-full bg-[#2B3440] ">
+  <div className="grid grid-cols-5  py-16 px-4 max-w-7xl mx-auto gap-4">
     <div className=" col-span-2 ">
       <img src={logo} alt="" className="w-60 rounded-lg " />
       <div className="flex gap-2 my-4">
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
     </div>
     <div className="font-bold">
-      <h1 className="text-gray-600 text-lg">SERVICES</h1>
+      <h1 className="text-[#7C8189] text-lg">SERVICES</h1>
       <div className="flex flex-col gap-4">
         <a href="">Providing Best Tutors</a>
         <a href="">Best Curriculum</a>

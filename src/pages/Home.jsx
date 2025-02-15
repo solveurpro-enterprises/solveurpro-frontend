@@ -17,25 +17,26 @@ const reviews = ["Mohd Danish", "Sameer Khan"];
 
 const Home = () => {
   return (
-    <div className=" mx-auto max-w-7xl">
+    <div className=" mx-auto ">
       {/* hero section */}
-      <section className="flex items-center w-full max-xl:min-h-screen pt-8 relative bg-transparent lg:h-fit px-4 max-md:flex-col max-md:px-0  max-md:mx-2 lg:py-16">
-        <div className=" mt-8 relative z-10 ">
+      <section className="flex items-center w-full max-xl:min-h-screen pt-8 relative bg-transparent lg:h-fit px-4 max-md:flex-col max-md:px-0  max-md:mx-2 lg:py-16 transition-all" >
+        <div className=" mt-8 relative max-w-7xl mx-auto ">
           <p className="text-[var(--primary-color)] flex gap-4 items-center font-extrabold mb-2 text-sm">
             {" "}
             <FaBookOpen />
             Best Tutors Providing Platform
           </p>
-          <h1 className="text-5xl font-bold text-[var(--primary-color)]">
-            Getting Best <br /> Quality Education <br /> Is Now More Easier
+          <h1 className="text-4xl  text-[var(--primary-color)]">
+            <span className="font-light">Getting Best </span>
+            <br /> <span className="font-bold"> Quality Education</span> <br /> <span>Is Now More Easier</span>
           </h1>
-          <p className="text-[var(--primary-color)] font-extrabold mt-4 text-sm w-1/2">
+          <p className="text-[var(--primary-color)]  mt-6 text-sm w-1/2">
             An online tutor-providing platform where anyone can share their
             knowledge, and students can learn from industry experts. Offering
             flexible learning, one-on-one sessions, and expert guidance to
             enhance skills in various fields.
           </p>
-          <div className="flex my-4 gap-4">
+          <div className="flex my-6 gap-4">
             <Link to="/services">
               <Button title="View All Services" buttonType={"primary"} />
             </Link>
@@ -44,36 +45,34 @@ const Home = () => {
             </Link>
           </div>
           <div className=" flex gap-4 mt-8">
-            <div className="flex gap-2 bg-[#726A61] py-2 px-6 text-lg rounded-lg items-center cursor-pointer hover:bg-[#726a61ce]">
-                <IoManSharp className="text-2xl" />
+            <div className="flex gap-1 bg-[#726A61] py-1 px-2 rounded-lg items-center cursor-pointer hover:bg-[#726a61b2]">
+                <IoManSharp className="" />
               <div>Best Tutors</div>
             </div>
-            <div  className=" flex gap-2 bg-[#726A61] py-2 px-6 text-lg rounded-lg items-center cursor-pointer hover:bg-[#726a61ce]">
-              <AiOutlineStock className="text-2xl" />
+            <div  className=" flex gap-1 bg-[#726A61] py-1 px-2 rounded-lg items-center cursor-pointer hover:bg-[#726a61b2]">
+              <AiOutlineStock className="" />
                 <div>Best Curriculum</div>
             </div>
-            <div className="flex gap-2 bg-[#726A61] py-2 px-6 text-lg rounded-lg items-center cursor-pointer hover:bg-[#726a61ce]">
-                <RiBaseStationLine className="text-2xl" />
+            <div className="flex gap-1 bg-[#726A61] py-1 px-2 rounded-lg items-center cursor-pointer hover:bg-[#726a61b2]">
+                <RiBaseStationLine className="" />
                 <div>Online/Offline Mode</div>
             </div>
-            <div className="flex gap-2 bg-[#726A61] py-2 px-6 text-lg rounded-lg items-center cursor-pointer hover:bg-[#726a61ce]">
-                <RiBaseStationLine className="text-2xl" />
+            <div className="flex gap-1 bg-[#726A61] py-1 px-2 rounded-lg items-center cursor-pointer hover:bg-[#726a61b2]">
+                <RiBaseStationLine className="" />
                 <div>Physically Challenged Students</div>
             </div>
-            <div className="flex gap-2 bg-[#726A61] py-2 px-6 text-lg rounded-lg items-center cursor-pointer hover:bg-[#726a61ce]">
-                <IoPricetagsSharp className="text-2xl" />
+            <div className="flex gap-1 bg-[#726A61] py-1 px-2 rounded-lg items-center cursor-pointer hover:bg-[#726a61b2]">
+                <IoPricetagsSharp className="" />
                 <div>Best Price</div>
             </div>
           </div>
         </div>
-        <div className="absolute top-0 bottom-0 right-0 left-0 overflow-hidden">
-          <video src={heroVideo} className="" autoPlay loop muted></video>
-        </div>
-        <div className=" absolute top-0 bottom-0 right-0 left-0 overflow-hidden bg-black opacity-80"></div>
+        <video src={heroVideo} className="absolute top-0 bottom-0 right-0 h-full w-full object-cover -z-30" autoPlay loop muted></video>
+        <div className=" absolute top-0 bottom-0 right-0 left-0 overflow-hidden bg-black opacity-90 -z-10"></div>
       </section>
 
-    <section className="px-4">
-      <h1 className={` border-l-4 ml-2 pl-2 mt-4 border-l-red-500 text-black text-3xl font-bold mb-6`}>Our Services</h1>
+    <section className="px-4 max-w-7xl mx-auto">
+      <h1 className={` border-l-4 pl-2 mt-4 border-l-red-500 text-black text-3xl font-bold mb-6`}>Our Services</h1>
       <div className="grid grid-cols-5 gap-6 items-center justify-center text-center mb-4">
         <div className="flex flex-col gap-4 text-black items-center justify-center border-2 rounded-lg p-2 h-full border-gray-500 transition-all hover:-translate-y-4">
           <img src={tutor} alt="" className="w-16 object-cover"  />

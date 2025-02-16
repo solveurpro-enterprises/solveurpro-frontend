@@ -20,7 +20,7 @@ const Home = () => {
     <div className=" mx-auto ">
       {/* hero section */}
       <section className="flex items-center justify-center w-full max-xl:min-h-screen pt-8 relative bg-transparent lg:h-fit px-4 max-md:flex-col max-md:px-0  max-md:mx-2 lg:py-16 transition-all" >
-        <div className=" mt-8 relative max-w-7xl mx-auto max-md:px-4">
+        <div className=" mt-8 relative z-40 max-w-7xl mx-auto max-md:px-4">
           <p className="text-[var(--primary-color)] flex gap-4 items-center mb-2 text-sm">
             {" "}
             <FaBookOpen />
@@ -67,8 +67,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <video src={heroVideo} className="absolute top-0 bottom-0 right-0 h-full w-full object-cover -z-30" autoPlay loop muted></video>
-        <div className=" absolute top-0 bottom-0 right-0 left-0 overflow-hidden bg-black opacity-90 -z-10"></div>
+        <video src={heroVideo} className="absolute top-0 bottom-0 right-0 h-full w-full object-cover z-20" autoPlay loop muted></video>
+        <div className=" absolute top-0 bottom-0 right-0 left-0 overflow-hidden w-full bg-black opacity-80 z-30"></div>
       </section>
 
     <section className="px-4 max-w-7xl mx-auto">
@@ -104,7 +104,7 @@ const Home = () => {
 
     <section className="w-full max-w-7xl flex flex-col my-12 h-fit items-center select-none group mx-auto lg:flex-row ">
       <div className=" overflow-hidden order-2 lg:order-1 ">
-      <img src={aboutImg} className="w-full px-4 object-cover  transition-all duration-500 overflow-hidden group-hover:scale-110" alt="" />
+      <img src={aboutImg} className="w-full px-4 my-2 object-cover  transition-all duration-500 overflow-hidden group-hover:scale-110" alt="" />
       </div>
       <div className=" flex flex-col items-start ml-4 order-1 lg:order-2 lg:w-1/2 ">
         <h2 className="border-l-2 border-red-600 ml-2 pl-2 font-bold text-black text-3xl">About Us</h2>

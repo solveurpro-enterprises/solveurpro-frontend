@@ -17,8 +17,8 @@ const socialIcons = [
 const Footer = () => {
   return (
     <div className="w-full bg-[#2B3440] ">
-  <div className="grid grid-cols-5  py-16 px-4 max-w-7xl mx-auto gap-4">
-    <div className=" col-span-2 ">
+  <div className="grid grid-cols-1 py-16 px-4 max-w-7xl mx-auto gap-4 md:grid-cols-2 lg:grid-cols-5">
+    <div className=" md:col-span-2 ">
       <img src={logo} alt="" className="w-60 rounded-lg " />
       <div className="flex gap-2 my-4">
         {

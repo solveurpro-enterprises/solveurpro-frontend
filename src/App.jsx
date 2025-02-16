@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Footer from './components/common/Footer';
 import Contact from './pages/Contact';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/*' element={<ErrorPage/>}/>
     </Routes>
     <Footer/>
     </div>

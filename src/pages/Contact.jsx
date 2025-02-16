@@ -8,18 +8,18 @@ const Contact = () => {
   return (
     <div className="mt-14 mx-auto relative min-h-screen">
       <div className="relative px-8 ">
-        <div className="flex max-w-7xl mx-auto items-center ">
-          <div className="w-3/5 text-[#1F2937] px-4 flex flex-col items-start ">
-            <h1 className="text-5xl  font-extrabold mb-6">Get in touch</h1>
-            <h2 className="text-2xl">
+        <div className="flex max-w-7xl mx-auto my-4 items-center flex-col lg:flex-row ">
+          <div className=" text-[#1F2937] px-4 flex flex-col items-start w-full lg:w-3/5  ">
+            <h1 className="text-2xl  font-extrabold mb-6">Get in touch</h1>
+            <h2 className="md:text-2xl">
               Want to get in touch? We'd love to hear from you.
             </h2>
-            <h2 className="text-2xl">Here's how you can reach us.</h2>
+            <h2 className="md:text-2xl">Here's how you can reach us.</h2>
           </div>
-          <img src={img} alt="" className="w-2/5 p-8" />
+          <img src={img} alt="" className="w-full p-2 md:p-4 lg:w-2/5 lg:p-8" />
         </div>
 
-        <div className=" max-w-7xl mx-auto grid grid-cols-2 gap-8 text-black items-center justify-center h-fit pb-8">
+        <div className=" max-w-7xl mx-auto grid grid-cols-1 gap-8 text-black items-center justify-center h-fit pb-8 md:grid-cols-2 ">
           <div className="shadow-[0px_10px_20px_rgba(0,0,0,1)] px-4 py-8 flex flex-col gap-2 items-center justify-center h-fit rounded-lg bg-white">
             <FaPhone className="text-4xl text-red-600 rotate-90" />
             <h3 className="  font-bold">Talk to Sales</h3>
@@ -49,8 +49,8 @@ const Contact = () => {
       </div>
 
       {/* form */}
-      <div className="grid grid-cols-3 mb-4">
-        <div className="bg-[#B1B1B1] flex flex-col gap-4 text-white px-4 py-8 rounded-lg">
+      <div className="grid grid-cols-5 mb-4 max-w-7xl mx-auto my-4">
+        <div className="bg-[#B1B1B1] gap-4 text-white px-4 py-8 rounded-lg w-full col-span-5 md:col-span-2">
             <span className="text-2xl font-bold">Contact Us</span>
             <span>We're open for any suggestion or just to have a chat.</span>
 
@@ -67,7 +67,7 @@ const Contact = () => {
             <span>solveurprobiz@gmail.com</span>
             </div>
         </div>
-        <form action="" className="bg-white text-black col-span-2 p-4 gap-4 mb-6">
+        <form action="" className="bg-white text-black p-4 gap-4 mb-6 col-span-5 md:col-span-3">
           <h1 className=" font-bold text-2xl text-black mb-6">send us a message</h1>
           <div className="grid grid-cols-2 gap-4">
             <label htmlFor="fullname">Full Name <br/>

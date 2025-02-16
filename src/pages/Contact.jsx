@@ -51,6 +51,7 @@ const Contact = () => {
       {/* form */}
       <div className="grid grid-cols-5 mb-4 max-w-7xl mx-auto my-4">
         <div className="bg-[#B1B1B1] gap-4 text-white px-4 py-8 rounded-lg w-full col-span-5 md:col-span-2">
+          <div className="flex flex-col gap-4">
             <span className="text-2xl font-bold">Contact Us</span>
             <span>We're open for any suggestion or just to have a chat.</span>
 
@@ -65,6 +66,7 @@ const Contact = () => {
             <div className="flex flex-col">
             <span>Email:</span>
             <span>solveurprobiz@gmail.com</span>
+            </div>
             </div>
         </div>
         <form action="" className="bg-white text-black p-4 gap-4 mb-6 col-span-5 md:col-span-3">

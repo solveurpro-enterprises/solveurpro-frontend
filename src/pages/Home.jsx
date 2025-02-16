@@ -20,7 +20,7 @@ const Home = () => {
     <div className=" mx-auto ">
       {/* hero section */}
       <section className="flex items-center justify-center w-full max-xl:min-h-screen pt-8 relative bg-transparent lg:h-fit px-4 max-md:flex-col max-md:px-0  max-md:mx-2 lg:py-16 transition-all" >
-        <div className=" mt-8 relative z-40 max-w-7xl mx-auto max-md:px-4">
+        <div className=" mt-8 relative  max-w-7xl mx-auto max-md:px-4">
           <p className="text-[var(--primary-color)] flex gap-4 items-center mb-2 text-sm">
             {" "}
             <FaBookOpen />
@@ -67,8 +67,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <video src={heroVideo} className="absolute top-0 bottom-0 right-0 h-full w-full object-cover z-20" autoPlay loop muted></video>
-        <div className=" absolute top-0 bottom-0 right-0 left-0 overflow-hidden w-full bg-black opacity-80 z-30"></div>
+        <video src={heroVideo} className="absolute top-0 bottom-0 right-0 h-full w-full object-cover -z-30" autoPlay loop muted></video>
+        <div className=" absolute top-0 bottom-0 right-0 left-0 overflow-hidden w-full bg-black opacity-80 -z-20"></div>
       </section>
 
     <section className="px-4 max-w-7xl mx-auto">

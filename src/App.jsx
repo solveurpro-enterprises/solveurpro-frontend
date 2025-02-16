@@ -9,6 +9,7 @@ import Navbar from './components/common/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Footer from './components/common/Footer';
+import Contact from './pages/Contact';
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/contact' element={<Contact/>}/>
     </Routes>
     <Footer/>
     </div>

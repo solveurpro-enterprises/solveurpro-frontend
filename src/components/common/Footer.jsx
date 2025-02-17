@@ -33,11 +33,11 @@ const Footer = () => {
     <div className="font-bold">
       <h1 className="text-red-500 text-lg">SERVICES</h1>
       <div className="flex flex-col gap-4">
-        <a href="">Providing Best Tutors</a>
-        <a href="">Best Curriculum</a>
-        <a href="">Modes Of Learning</a>
-        <a href="">Physically Challenged Students</a>
-        <a href="">Best Prices</a>
+        <Link to="/services">Tutoring Services</Link>
+        <Link to="/services">Job Enablement Training</Link>
+        <Link to="/services">Recruitment Consultancy</Link>
+        <Link to="/services">Entrepreneurship Support</Link>
+        <Link to="/services">Physically Challenged Students</Link>
       </div>
     </div>
     <div className="font-bold">

@@ -83,20 +83,20 @@ const Home = () => {
         <div className="flex flex-col gap-4 text-black items-center justify-center border-2 rounded-lg p-2 h-full border-gray-500 transition-all hover:-translate-y-4">
           {/* <img src={tutor} alt="" className="w-16 object-cover"  /> */}
           <FaChalkboardTeacher className="text-7xl text-red-600" />
-          <h2 className="font-2xl font-bold">Tutoring Services</h2>
-          <p className=" text-[#777777] select-none ">We offer quality education with expert tutors to help students improve their skills and succeed in their studies.</p>
+          <h2 className="font-2xl font-bold">Tutoring Services </h2>
+          <p className=" text-[#777777]   ">We offer quality education with expert tutors to help students improve their skills and succeed in their studies.</p>
         </div>
         <div className="flex flex-col gap-4 text-black items-center justify-center border-2 rounded-lg p-2 h-full border-gray-500 transition-all hover:-translate-y-4">
           {/* <img src={curriculum} alt="" className="w-16 object-cover"  /> */}
           <TbBrandUpwork className="text-7xl text-red-600"/>
           <h2 className="font-2xl font-bold">Job Enablement Training</h2>
-          <p className=" text-[#777777] select-none ">We provide practical training to help individuals gain skills and get better job opportunities.</p>
+          <p className=" text-[#777777]   ">We provide practical training to help individuals gain skills and get better job opportunities.</p>
         </div>
         <div className="flex flex-col gap-4 text-black items-center justify-center border-2 rounded-lg p-2 h-full border-gray-500 transition-all hover:-translate-y-4">
           {/* <img src={mode} alt="" className="w-16 object-cover"  /> */}
           <HiUsers  className="text-7xl text-red-600"/>
           <h2 className="font-2xl font-bold"> Recruitment Consultancy (National & International)</h2>
-          <p className=" text-[#777777] select-none ">Looking for a job? We connect job seekers with the best national & international opportunities.
+          <p className=" text-[#777777]   ">Looking for a job? We connect job seekers with the best national & international opportunities.
           Need employees? We help businesses find the right talent.</p>
         </div>
         <div className="flex flex-col gap-4 text-black items-center justify-center border-2 rounded-lg p-2 h-full border-gray-500 transition-all hover:-translate-y-4">
@@ -104,20 +104,20 @@ const Home = () => {
           <FaLightbulb  className="text-7xl text-red-600"/>
 
           <h2 className="font-2xl font-bold">Entrepreneurship Support</h2>
-          <p className=" text-[#777777]  select-none">Want to start your own business? We provide guidance, mentorship, and resources to help aspiring entrepreneurs turn their ideas into successful ventures.</p>
+          <p className=" text-[#777777]   ">Want to start your own business? We provide guidance, mentorship, and resources to help aspiring entrepreneurs turn their ideas into successful ventures.</p>
         </div>
         <div className="flex flex-col gap-4 text-black items-center justify-center border-2 rounded-lg p-2 h-full border-gray-500 transition-all hover:-translate-y-4">
           {/* <img src={PH} alt="" className="w-16 object-cover"  /> */}
           <FaWheelchair  className="text-7xl text-red-600"/>
           <h2 className="font-2xl font-bold">Physically Challenged Students</h2>
-          <p className=" text-[#777777] select-none">Specialized paid tutoring for physically handicapped students, ensuring accessible and personalized learning support.</p>
+          <p className=" text-[#777777]  ">Specialized paid tutoring for physically handicapped students, ensuring accessible and personalized learning support.</p>
         </div>
       </div>
     </section>
 
-    <section className="w-full max-w-7xl flex flex-col my-12 h-fit items-center select-none group mx-auto lg:flex-row ">
+    <section className="w-full max-w-7xl flex flex-col my-12 h-fit items-center   group mx-auto lg:flex-row ">
       <div className=" overflow-hidden order-2 lg:order-1 ">
-      <img src={aboutImg} className="w-full px-4 my-2 object-cover  transition-all duration-500 overflow-hidden group-hover:scale-110" alt="" />
+      <img src={"https://t3.ftcdn.net/jpg/05/13/25/32/240_F_513253237_UQv6e1YHZwqpWA9ocs2JSAz53FjnWVp6.jpg"} className="w-full px-4 my-2 object-cover  transition-all duration-500 overflow-hidden group-hover:scale-110" alt="" />
       </div>
       <div className=" flex flex-col items-start ml-4 order-1 lg:order-2 lg:w-1/2 ">
         <h2 className="border-l-2 border-red-600 ml-2 pl-2 font-bold text-black text-3xl">About Us</h2>

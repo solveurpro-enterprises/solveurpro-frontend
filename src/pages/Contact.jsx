@@ -24,8 +24,8 @@ const Contact = () => {
             <FaPhone className="text-4xl text-red-600 rotate-90" />
             <h3 className="  font-bold">Talk to Sales</h3>
             <span className="text-center">
-              Interested in our services? Just pick up the phone to chat with a
-              member of our sales team.
+              Just pick up the phone to chat with a
+              member of our  team.
             </span>
             <span className="text-red-600 font-bold">7895680679</span>
           </div>
@@ -57,7 +57,7 @@ const Contact = () => {
 
             <div className="flex flex-col ">
             <span>Address:</span>
-            <span>dkdkkdkkdkdk, Aligarh (U.P) 202122, India</span>
+            <span>S.S Nagar, Aligarh (U.P) 202122, India</span>
             </div>
             <div className="flex flex-col">
             <span>Phone:</span>

@@ -5,14 +5,16 @@ import instagram from "../../assets/instagram.png";
 import facebook from "../../assets/facebook.png";
 import linkedin from "../../assets/linkedin.png";
 import whatsapp from "../../assets/whatsapp.gif";
+import youtube from "../../assets/youtube.png";
 import { Link } from "react-router-dom";
 import phone from "../../assets/phone.jpeg";
 
 const socialIcons = [
-  { icons: instagram, link: "https://www.instagram.com/solverurpro" },
+  { icons: instagram, link: "https://www.instagram.com/solveurpro_enterprises/" },
   { icons: facebook, link: "https://facebook.com/solverurpro" },
-  { icons: linkedin, link: "http://www.linkedin.com/solverurpro" },
-  { icons: whatsapp, link: "http://www.whatsapp.com/solverurpro" },
+  { icons: linkedin, link: "https://www.linkedin.com/company/solveurpro-enterprise/posts/?feedView=all" },
+  { icons: whatsapp, link: "https://chat.whatsapp.com/E5EMAFiNYcRAuQvqmweB4T" },
+  { icons: youtube, link: "https://www.youtube.com/@Solverurpro_Enterprises" },
 ];
 const Footer = () => {
   return (
@@ -23,13 +25,13 @@ const Footer = () => {
       <div className="flex gap-2 my-4">
         {
           socialIcons.map((child,index)=>(
-            <a href={`${child.link}`}><img src={child.icons} alt="social icons" className="" /></a>
+            <a href={`${child.link}`} target="_blank"><img src={child.icons} alt="social icons" className="" /></a>
           ))
         }
       </div>
     </div>
     <div className="font-bold">
-      <h1 className="text-[#7C8189] text-lg">SERVICES</h1>
+      <h1 className="text-red-500 text-lg">SERVICES</h1>
       <div className="flex flex-col gap-4">
         <a href="">Providing Best Tutors</a>
         <a href="">Best Curriculum</a>
@@ -39,7 +41,7 @@ const Footer = () => {
       </div>
     </div>
     <div className="font-bold">
-      <h1 className="text-gray-600 text-lg">COMPANY</h1>
+      <h1 className="text-red-500 text-lg">COMPANY</h1>
       <div className="flex flex-col gap-4">
         <a href="">About Us</a>
         <a href="">Contact Us</a>
@@ -49,7 +51,7 @@ const Footer = () => {
       </div>
     </div>
     <div className="font-bold">
-      <h1 className="text-gray-600 text-lg">CONTACT US</h1>
+      <h1 className="text-red-500 text-lg">CONTACT US</h1>
       <div className="flex flex-col gap-4">
         <a href="">7895680679</a>
         <a href="">solveurprobiz@gmail.com</a>

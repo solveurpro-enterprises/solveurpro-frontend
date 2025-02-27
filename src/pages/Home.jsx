@@ -57,7 +57,7 @@ const Home = () => {
             </div>
             <div  className=" flex gap-1 bg-[#726A61] py-1 px-2 rounded-lg items-center cursor-pointer hover:bg-[#726a61b2]">
               <FaSquareUpwork className="text-2xl pr-1" />
-                <div> Job Enablement Training <br />(National & International)</div>
+                <div> Employability skills training <br />(National & International)</div>
             </div>
             <div className="flex gap-1 bg-[#726A61] py-1 px-2 rounded-lg items-center cursor-pointer hover:bg-[#726a61b2]">
                 <CiSettings className="text-2xl pr-1" />
@@ -73,8 +73,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <video src={heroVideo} className="absolute top-0 bottom-0 right-0 h-full w-full object-cover -z-30" autoPlay loop muted></video>
-        <div className=" absolute top-0 bottom-0 right-0 left-0 overflow-hidden w-full bg-black opacity-60 -z-20"></div>
+        <video src={heroVideo} className="absolute top-0 bottom-0 right-0 h-full w-full object-cover -z-20" autoPlay loop muted></video>
+        <div className=" absolute top-0 bottom-0 right-0 left-0 overflow-hidden w-full bg-black opacity-70 -z-20"></div>
       </section>
 
     <section className="px-4 max-w-7xl mx-auto">
@@ -89,7 +89,7 @@ const Home = () => {
         <div className="flex flex-col gap-4 text-black items-center justify-center border-2 rounded-lg p-2 h-full border-gray-500 transition-all hover:-translate-y-4">
           {/* <img src={curriculum} alt="" className="w-16 object-cover"  /> */}
           <TbBrandUpwork className="text-7xl text-red-600"/>
-          <h2 className="font-2xl font-bold">Job Enablement Training</h2>
+          <h2 className="font-2xl font-bold">Employability skills training</h2>
           <p className=" text-[#777777]   ">We provide practical training to help individuals gain skills and get better job opportunities.</p>
         </div>
         <div className="flex flex-col gap-4 text-black items-center justify-center border-2 rounded-lg p-2 h-full border-gray-500 transition-all hover:-translate-y-4">

@@ -12,6 +12,7 @@ import Footer from './components/common/Footer';
 import Contact from './pages/Contact';
 import ErrorPage from './pages/ErrorPage';
 import Services from './pages/Services';
+import About from './pages/About';
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/services' element={<Services/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/about' element={<About/>}/>
       <Route path='/*' element={<ErrorPage/>}/>
     </Routes>
     <Footer/>

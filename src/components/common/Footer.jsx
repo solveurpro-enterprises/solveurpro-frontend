@@ -13,7 +13,7 @@ const socialIcons = [
   { icons: instagram, link: "https://www.instagram.com/solveurpro_enterprises/" },
   { icons: facebook, link: "https://facebook.com/solverurpro" },
   { icons: linkedin, link: "https://www.linkedin.com/company/solveurpro-enterprise/posts/?feedView=all" },
-  { icons: whatsapp, link: "https://chat.whatsapp.com/E5EMAFiNYcRAuQvqmweB4T" },
+  { icons: whatsapp, link: "https://wa.me/7895680679" },
   { icons: youtube, link: "https://www.youtube.com/@Solverurpro_Enterprises" },
 ];
 const Footer = () => {
@@ -43,18 +43,18 @@ const Footer = () => {
     <div className="font-bold">
       <h1 className="text-red-500 text-lg">COMPANY</h1>
       <div className="flex flex-col gap-4">
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
-        <a href="">Gallary</a>
-        <a href="">News</a>
-        <a href="">Jobs</a>
+        <Link to="about">About Us</Link>
+        <Link to="contact">Contact Us</Link>
+        <Link to="">Gallary</Link>
+        <Link to="">News</Link>
+        <Link to="">Jobs</Link>
       </div>
     </div>
     <div className="font-bold">
       <h1 className="text-red-500 text-lg">CONTACT US</h1>
       <div className="flex flex-col gap-4">
-        <a href="">7895680679</a>
-        <a href="">solveurprobiz@gmail.com</a>
+        <a href="tel:7895680679" className="flex items-center gap-2" >  <HiOutlinePhone/>7895680679</a>
+        <a href="mailto:solveurprobiz@gmail.com" className="flex items-center gap-2" ><HiOutlineMail/>solveurprobiz@gmail.com</a>
       </div>
     </div>
   </div>  

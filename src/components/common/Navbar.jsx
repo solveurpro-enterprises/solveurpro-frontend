@@ -17,9 +17,9 @@ const Navbar = () => {
     <nav className='bg-white h-14 fixed w-full z-40 px-4'>
       <div className='max-w-7xl h-14 mx-auto flex justify-between items-center'>
         {/* Logo */}
-        <div className='h-full py-1'>
+        <Link to={"/"} className='h-full py-1'>
           <img className='h-full' src={logo} alt="Logo" />
-        </div>
+        </Link>
 
         {/* Hamburger Menu Icon (Mobile Only) */}
         <div className='md:hidden'>

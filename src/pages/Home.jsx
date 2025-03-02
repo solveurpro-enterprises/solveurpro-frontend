@@ -19,13 +19,12 @@ import { GiOfficeChair } from "react-icons/gi";
 import { TbBrandUpwork } from "react-icons/tb";
 import { HiUsers } from "react-icons/hi";
 
-const reviews = ["Mohd Danish", "Sameer Khan"];
 
 const Home = () => {
   return (
     <div className=" mx-auto ">
       {/* hero section */}
-      <section className="flex items-center justify-center w-full max-xl:min-h-screen pt-8 relative bg-transparent lg:h-fit px-4 max-md:flex-col max-md:px-0  max-md:mx-2 lg:py-16 transition-all" >
+      <section className="flex items-center justify-center w-full max-xl:min-h-screen pt-8 relative bg-transparent lg:h-fit px-4 max-md:flex-col max-md:px-0  max-md:mx-0 lg:py-16 transition-all" >
         <div className=" mt-8 relative  max-w-7xl mx-auto max-md:px-4">
           <p className="text-[var(--primary-color)] flex gap-4 items-center mb-2 text-lg font-bold ">
             {" "}

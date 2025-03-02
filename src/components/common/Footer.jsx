@@ -58,8 +58,8 @@ const Footer = () => {
       </div>
     </div>
   </div>  
-  <p className=" text-center py-2">
-        <a href="https://portfoliobysameer.vercel.app/" target="_blank">Made By ❤️ Sameer Khan &copy; 2025 solverurpro. All rights reserved</a>
+  <p className=" text-center py-2 text-sm">
+        <a href="https://portfoliobysameer.vercel.app/" target="_blank">Design And Developed By ❤️ Sameer Khan &copy; 2025 Solverurpro. All Rights Reserved</a>
       </p>
   </div>
   );
